@@ -203,7 +203,6 @@ const LandingPage = () => {
           </div>
           <Link to={isAuthenticated ? "/home" : "/register"}>
             <button className="flex-none bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-primary/25 transition-all active:scale-95 flex items-center gap-2">
-              <span className="material-symbols-outlined text-[20px]">fire</span>
               Get Gas
             </button>
           </Link>
