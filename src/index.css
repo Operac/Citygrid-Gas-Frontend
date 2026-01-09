@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global brand styles */
+@layer base {
+	:root {
+		--color-primary: #155E3E;
+		--color-charcoal: #222222;
+		--color-energy-lime: #A7E34B;
+		--color-soft-gray: #F5F6F7;
+		--color-slate-gray: #5E6E64;
+		--color-electric-blue: #009FE3;
+	}
+
+	html, body, #root {
+		height: 100%;
+	}
+
+		body {
+			background-color: var(--color-soft-gray);
+			color: var(--color-charcoal);
+			font-family: 'Inter', sans-serif;
+			font-size: 16px;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+	h1, h2, h3, h4, h5 {
+		color: var(--color-charcoal);
+		font-weight: 700;
+	}
+
+	p, span, a, li {
+		color: var(--color-charcoal);
+	}
+}
+
+@layer components {
+	/* Primary CTA */
+		.btn-primary {
+			background-color: var(--color-primary);
+			color: #ffffff;
+			font-weight: 600;
+			border-radius: 0.5rem;
+			padding: 0.5rem 1rem;
+		}
+		.btn-primary:hover {
+			background-color: var(--color-energy-lime);
+			color: #ffffff;
+		}
+
+	/* Secondary CTA */
+		.btn-secondary {
+			background-color: var(--color-energy-lime);
+			color: var(--color-primary);
+			font-weight: 600;
+			border-radius: 0.5rem;
+			padding: 0.5rem 1rem;
+		}
+		.btn-secondary:hover {
+			background-color: var(--color-primary);
+			color: #ffffff;
+		}
+
+	/* Muted/subheading */
+		.muted {
+			color: var(--color-slate-gray);
+		}
+}
