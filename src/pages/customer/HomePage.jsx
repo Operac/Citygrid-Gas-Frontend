@@ -225,6 +225,9 @@ export default function HomePage() {
     return Object.keys(errors).length === 0;
   };
 
+
+  console.log('DEBUG: Flutterwave Key:', import.meta.env.VITE_FLW_PUBLIC_KEY); // DEBUGGING LINE
+
   const handleFlutterwavePayment = useFlutterwave({
     public_key: import.meta.env.VITE_FLW_PUBLIC_KEY,
     tx_ref: Date.now(),
